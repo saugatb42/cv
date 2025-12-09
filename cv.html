@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saugat Bhattarai — CV</title>
+  <meta name="description" content="Curriculum Vitae — Saugat Bhattarai" />
+  <style>
+    :root{
+      --accent:#0ea5a4; /* teal */
+      --muted:#64748b;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:950px;margin:32px auto;padding:24px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.08);overflow:hidden}
+    header{display:grid;grid-template-columns:1fr 240px;gap:20px;padding:28px}
+    .name{font-size:28px;font-weight:700;margin:0}
+    .title{color:var(--muted);margin:6px 0 12px}
+    .contacts{font-size:14px;color:var(--muted);line-height:1.6}
+    .photo{display:flex;align-items:center;justify-content:center;padding:12px}
+    .avatar{width:160px;height:160px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:26px}
+
+    main{display:grid;grid-template-columns:1fr 340px;gap:24px;padding:28px 28px 40px}
+    section{margin-bottom:18px}
+    h3{margin:0 0 10px;font-size:16px;color:#0f172a}
+    p.lead{margin:0;color:var(--muted);line-height:1.6}
+
+    /* Experience / items */
+    .item{padding:12px;border-radius:10px;border:1px solid rgba(15,23,42,0.04);margin-bottom:10px}
+    .item strong{display:block}
+    .meta{font-size:13px;color:var(--muted)}
+
+    /* Skills */
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(14,165,164,0.08);border:1px solid rgba(14,165,164,0.18);padding:6px 10px;border-radius:999px;font-size:13px;color:#065f5e}
+
+    /* Projects table */
+    .project{padding:10px;border-radius:8px;border:1px dashed rgba(15,23,42,0.04);margin-bottom:10px}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Print style */
+    @media print{
+      body{background:white}
+      .container{max-width:100%;margin:0;padding:0}
+      header,main{padding:0}
+      .card{box-shadow:none;border-radius:0}
+      .photo{display:none}
+    }
+
+    /* Responsive */
+    @media (max-width:880px){
+      header{grid-template-columns:1fr}
+      main{grid-template-columns:1fr}
+      .photo{order:-1}
+    }
+
+    /* Utilities */
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:white;text-decoration:none;font-weight:600;cursor:pointer}
+    .btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);color:#0f172a}
+
+    footer{padding:18px 28px;background:#fbfdfe;border-top:1px solid rgba(15,23,42,0.03);display:flex;justify-content:space-between;align-items:center}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="cv-card">
+      <header>
+        <div>
+          <h1 class="name">Saugat Bhattarai</h1>
+          <div class="title">Junior Web Developer • Junior Data Analyst • Community Leader</div>
+          <div class="contacts">
+            <div><strong>Email:</strong> <span id="email">your.email@example.com</span></div>
+            <div><strong>Phone:</strong> <span id="phone">+977-98XXXXXXXX</span></div>
+            <div><strong>Location:</strong> Biratnagar, Nepal</div>
+          </div>
+          <div style="margin-top:14px">
+            <h3>Professional Summary</h3>
+            <p class="lead">Motivated and versatile professional experienced in web development, data analysis, network security assessment, event coordination, and community leadership. Strong communication and project management skills with a record of delivering technical and community-focused projects.</p>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="avatar" id="avatar">SB</div>
+        </div>
+      </header>
+
+      <main>
+        <div>
+          <section>
+            <h3>Work & Leadership Experience</h3>
+            <div class="item">
+              <strong>Junior Web Developer — Web Innovations Services Pvt. Ltd.</strong>
+              <div class="meta">Built portfolio management systems, responsive UI, backend integration</div>
+            </div>
+            <div class="item">
+              <strong>Junior Data Analyst — MediTech Solutions (HealthGuard)</strong>
+              <div class="meta">Machine learning for healthcare analytics: data prep, EDA, modeling, reporting</div>
+            </div>
+            <div class="item">
+              <strong>General Secretary (SG) — Tankisinwari Junior JCI (2025)</strong>
+              <div class="meta">Organized youth events, community programs, and leadership initiatives</div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Projects</h3>
+            <div class="project">
+              <strong>Portfolio Website — Radiant Memories</strong>
+              <div class="small">Photo management system, gallery, filtering, admin panel.</div>
+            </div>
+            <div class="project">
+              <strong>Job Portal — Elevate Workforce Solutions</strong>
+              <div class="small">PHP (MVC), secure authentication, job posting and application workflow.</div>
+            </div>
+            <div class="project">
+              <strong>HealthGuard — Patient Readmission Model</strong>
+              <div class="small">Developed ML model and produced evaluation reports and presentation slides.</div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Education</h3>
+            <div class="item">
+              <strong>[Your Program / Degree]</strong>
+              <div class="meta">ISMT College / University of Sunderland (as applicable) — Year</div>
+            </div>
+          </section>
+
+        </div>
+
+        <aside>
+          <section>
+            <h3>Technical Skills</h3>
+            <div class="skills" id="skills-list">
+              <span class="chip">PHP</span>
+              <span class="chip">HTML &amp; CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Wireshark</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">Network Security</span>
+            </div>
+          </section>
+
+          <section>
+            <h3>Achievements & Activities</h3>
+            <div class="small">Led JCI and Scout events: Sports Week, Oratory Programs, Plantation drives, Health camps. Active in community leadership and technical workshops.</div>
+          </section>
+
+          <section>
+            <h3>Languages</h3>
+            <div class="small">Nepali (Native) • English (Professional)</div>
+          </section>
+
+          <section style="margin-top:12px">
+            <h3>Actions</h3>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+              <button class="btn btn-ghost" id="downloadBtn">Download HTML</button>
+            </div>
+          </section>
+        </aside>
+      </main>
+
+      <footer>
+        <div class="small">Curriculum Vitae — Saugat Bhattarai</div>
+        <div class="small muted">Updated: <span id="today"></span></div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Fill today's date
+    document.getElementById('today').textContent = new Date().toLocaleDateString();
+
+    // Simple download HTML button
+    document.getElementById('downloadBtn').addEventListener('click', function(){
+      const html = document.documentElement.outerHTML;
+      const blob = new Blob([html], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'saugat_bhattarai_cv.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    // If you want to programmatically set contact info from JS (optional)
+    function setContact(email,phone){
+      document.getElementById('email').textContent = email || 'your.email@example.com';
+      document.getElementById('phone').textContent = phone || '+977-98XXXXXXXX';
+    }
+
+    // Example: setContact('saugat@example.com','+977-9812345678');
+  </script>
+</body>
+</html>
